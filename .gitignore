@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Compiled class file
 *.class
 
@@ -24,6 +25,8 @@
 hs_err_pid*
 replay_pid*
 =======
+=======
+>>>>>>> cb3d18e88b95b3f77906494e549a1b943281056f
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -57,4 +60,7 @@ build/
 
 ### VS Code ###
 .vscode/
+<<<<<<< HEAD
 >>>>>>> cb3d18e (Intial comment - project setup)
+=======
+>>>>>>> cb3d18e88b95b3f77906494e549a1b943281056f
