@@ -3,19 +3,23 @@ spring:
     active: h2     # 👈 use h2 for development
 
 ---
+
 spring:
   config:
     activate:
       on-profile: h2
+
   datasource:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:studentdb
     username: sa
     password:
+
   h2:
     console:
       enabled: true
       path: /h2-console
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -23,3 +27,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
+    defer-datasource-initialization: true    # 👈 FIX 1 (critical)
+
+  sql:
+    init:
+      mode: always                           # 👈 FIX 2 (critical)
